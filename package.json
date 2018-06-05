@@ -6,7 +6,7 @@
   "main": "server.js",
   "scripts": {
     "test": "JUNIT_REPORT_PATH=./report.xml ./node_modules/mocha/bin/mocha test/",
-    "test-jenkins": "JUNIT_REPORT_PATH=./report.xml ./node_modules/mocha/bin/mocha test --colors --reporter mocha-jenkins-reporter"
+    "test-jenkins": "JUNIT_REPORT_PATH=./report.xml ./node_modules/mocha/bin/mocha test --colors --reporter mocha-jenkins-reporter || exit 0"
   },
   "author": "Jordan Kasper",
   "license": "MIT",
